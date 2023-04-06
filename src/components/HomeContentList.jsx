@@ -1,0 +1,23 @@
+import { Box, Divider, Typography } from "@mui/material";
+import React from "react";
+import ContentBox from "./ContentBox";
+
+const HomeContentList = ({ title, contents }) => {
+    return (
+        <Box sx={{ width: "100%", height: "100%", marginBottom: "5px" }}>
+            <Box sx={{ backgroundColor: "inherit", borderBottom: "solid #D9D9D9", margin: "10px" }}>
+                <Typography variant="h6" color="#D9D9D9">
+                    {title}
+                </Typography>
+            </Box>
+            <Divider />
+            <Box sx={{ display: "flex", alignContent: "space-around", justifyContent: "space-evenly", flexWrap: "wrap" }}>
+                {contents.map(() => (
+                    <ContentBox></ContentBox>
+                ))}
+            </Box>
+        </Box>
+    );
+};
+
+export default HomeContentList;

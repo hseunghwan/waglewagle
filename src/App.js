@@ -1,22 +1,44 @@
-import logo from "./logo.svg";
-import AppToolbar from "./components/AppToolbar";
-import "./App.css";
+import "src/App.css";
 import React from "react";
-import { Unity, useUnityContext } from "react-unity-webgl";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "src/pages/Home";
+import Error from "src/pages/Error";
+import SignIn from "src/pages/SignIn";
+import SignUp from "src/pages/SignUp";
+import MyPage from "src/pages/MyPage";
+import Game from "src/pages/Game";
+import Bookmark from "src/pages/Bookmark";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home />,
+        errorElement: <Error />,
+    },
+    {
+        path: "/SignIn",
+        element: <SignIn />,
+    },
+    {
+        path: "/SignUp",
+        element: <SignUp />,
+    },
+    {
+        path: "/MyPage",
+        element: <MyPage />,
+    },
+    {
+        path: "/Game",
+        element: <Game />,
+    },
+    {
+        path: "/Bookmark",
+        element: <Bookmark />,
+    },
+]);
 
 function App() {
-    const { unityProvider } = useUnityContext({
-        loaderUrl: "Build/WebGL Builds.loader.js",
-        dataUrl: "Build/WebGL Builds.data",
-        frameworkUrl: "Build/WebGL Builds.framework.js",
-        codeUrl: "Build/WebGL Builds.wasm",
-    });
-    return (
-        <div className="App">
-            <AppToolbar />
-            <Unity unityProvider={unityProvider} />
-        </div>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
