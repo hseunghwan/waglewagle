@@ -1,24 +1,20 @@
 import logo from "./logo.svg";
-import TodoDialog from "./components/TodoDialog";
 import AppToolbar from "./components/AppToolbar";
 import "./App.css";
+import React from "react";
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
+    const { unityProvider } = useUnityContext({
+        loaderUrl: "Build/WebGL Builds.loader.js",
+        dataUrl: "Build/WebGL Builds.data",
+        frameworkUrl: "Build/WebGL Builds.framework.js",
+        codeUrl: "Build/WebGL Builds.wasm",
+    });
     return (
         <div className="App">
             <AppToolbar />
-            <header className="App-header">
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <TodoDialog />
-            </header>
+            <Unity unityProvider={unityProvider} />
         </div>
     );
 }
