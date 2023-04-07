@@ -2,6 +2,7 @@ import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import ContentBox from "./ContentBox";
 
+//페이지 안에서 게임 리스트를 보여주는 컴포넌트
 const HomeContentList = ({ title, contents }) => {
     return (
         <Box sx={{ width: "100%", height: "100%", marginBottom: "5px" }}>

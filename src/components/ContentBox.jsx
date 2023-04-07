@@ -1,5 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
+
+//게임 로고를 그려줄 컴포넌트
 export default function ContentBox() {
     const style = {
         width: "20vw",
