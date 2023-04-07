@@ -6,6 +6,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { GAME_NAME } from "src/consts/text";
 
+//툴바 컴포넌트
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: "10px",
