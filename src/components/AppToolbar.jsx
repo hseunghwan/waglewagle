@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import { AppBar, Box, Toolbar, IconButton, Button, Typography, InputBase, MenuItem, Menu } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { GAME_NAME } from "src/consts/text";
 
@@ -125,7 +125,7 @@ export default function AppToolbar() {
                             aria-haspopup="true"
                             color="inherit"
                         >
-                            <AccountCircle />
+                            <AccountCircleOutlinedIcon />
                         </IconButton>
                     </Box>
                     <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -150,7 +150,7 @@ export default function AppToolbar() {
                             aria-haspopup="true"
                             color="inherit"
                         >
-                            <AccountCircle />
+                            <AccountCircleOutlinedIcon />
                         </IconButton>
                     </Box>
                 </Toolbar>

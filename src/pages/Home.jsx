@@ -4,22 +4,21 @@ import HomeContentList from "src/components/HomeContentList";
 
 //임시 게임 리스트
 const temparr = [
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
-    { id: "gameid1", img: "path1" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
+    { id: "85" },
 ];
 
 //메인 홈페이지
 const Home = () => {
-    //성원씨 유니티 게임을 가져오는 부분
-    //https://youtu.be/D1lEBY0MzvQ
-
     return (
         <div className="App">
             <AppToolbar />
