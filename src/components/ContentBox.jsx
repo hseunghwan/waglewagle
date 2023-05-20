@@ -1,7 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import gogun from "src/resource/85.jpg";
 
 //게임 로고를 그려줄 컴포넌트
 export default function ContentBox({ id }) {
@@ -21,7 +20,7 @@ export default function ContentBox({ id }) {
 
     return (
         <Box onClick={handleClick} sx={style}>
-            <img src={gogun} alt="content" />
+            <img src={`resource/${id}.jpg`} alt="content" />
         </Box>
     );
 }
