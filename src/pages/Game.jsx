@@ -35,9 +35,9 @@ export default function Game() {
                 <Divider sx={{ width: "100%" }} />
                 <Box>
                     <Box>
-                        <img src={`/resource/${id}.jpg`} alt="content" />
+                        <img src={`/resource/img/${id}.jpg`} alt="content" />
                     </Box>
-                    <RufflePlayer swfUrl={`/resource/${id}.swf`} />
+                    <RufflePlayer swfUrl={`/resource/swf/${id}.swf`} />
                 </Box>
             </Box>
         </div>
